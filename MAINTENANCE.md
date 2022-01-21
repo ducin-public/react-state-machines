@@ -1,0 +1,8 @@
+- UPDATE 7.02.2023
+  - react v18
+  - storybook 6.4 -> 6.5; nie chciało działa ootb, usunięte i zainstalowane od zera przez `npx storybook init`
+  - redux wraz z setupem typescripta
+  - dodane tsty integracyjne; w ANF są śmieszkowe-polskie labele, tu - angielskie, były ręczne tłumaczenia; ddoatkowo zmiana ścieżek (importów)
+  - ZANIECHANE
+    - "axios": "^0.27.2" update do 1.3.2 -> był mocno problematyczny, bo zmienił się sposób exportowania w samym axiosie (ESModules coś tam) i setup CRA wtedy nie obsługiwał tego ootb
+    - msw: 1 -> nie próbowałem, wygląda na zbyt nowe (ekosystem niegotowy, ryzykowne)
