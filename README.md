@@ -2,6 +2,17 @@
 
 Implement the device authorization process using state machines.
 
+## Troubleshooting
+
+In case of `Error: error:0308010C:digital envelope routines::unsupported [...]` try setting this in your terminal:
+
+- macOS:
+    > export NODE_OPTIONS=--openssl-legacy-provider
+- windows:
+    > set NODE_OPTIONS=--openssl-legacy-provider
+- powershell:
+    > $env:NODE_OPTIONS = "--openssl-legacy-provider"
+
 ## "Authorize Device" process
 
 The entire process has 2 callbacks: `onSuccess` and `onLogout`. They're called, when the process finishes successfully or is interrupted, respectively.
